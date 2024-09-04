@@ -34,7 +34,7 @@ runs:
       shell: bash
 
     - name: Run local action
-      uses: ukho-cfreeman/hello-world-composite-action/local-action@v1.5 # Uses an action in the root directory
+      uses: ./local-action # Uses an action in the root directory
       id: hello
       with:
         who-to-greet: 'Mona the Octocat'
