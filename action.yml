@@ -33,4 +33,8 @@ runs:
       run: goodbye.sh
       shell: bash
 
-
+    - name: Run local action
+      uses: ./local-action # Uses an action in the root directory
+      id: hello
+      with:
+        who-to-greet: 'Mona the Octocat'
